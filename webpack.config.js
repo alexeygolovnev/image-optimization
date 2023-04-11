@@ -39,7 +39,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         loader: "file-loader",
         options: {
-          outputPath: "assets",
+          outputPath: "images",
           name: "[name].[ext]",
         },
       },

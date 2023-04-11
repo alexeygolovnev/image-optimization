@@ -16,8 +16,6 @@ module.exports = function (source) {
   const match = urlPattern.exec(source);
   const imageUrl = match ? `./src/${match[1]}` : null;
 
-  console.log({ imageUrl });
-
   const processImage = (size) => {
     const clone = sharp(imageUrl);
     const webpPromise = clone
